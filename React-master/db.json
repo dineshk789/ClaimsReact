@@ -1,0 +1,45 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+"claims": [
+  {
+  "emp_id":"001",
+  "emp_name":"Bharath",
+  "claim_number":"c001",
+  "claim_type":"ctype",
+  "claim_program":"C001",
+  "start_date":"01-09-2020",
+  "end_date":"06-09-2020"},
+  {
+    "emp_id":"002",
+    "emp_name":"SaiKumar",
+    "claim_number":"c002",
+    "claim_type":"ctype",
+    "claim_program":"C001",
+    "start_date":"02-09-2020",
+    "end_date":"06-09-2020"}],
+ "user": [
+      {
+      "userName":"bharath",
+      "password":"b00001"
+    },
+    {
+      "userName":"Praveen",
+      "password":"p00001"
+    }]
+}

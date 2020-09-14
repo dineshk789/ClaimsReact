@@ -17,7 +17,6 @@ class Contact extends React.Component {
     <Nav className="mr-auto">   
      <Nav.Link  href="#home" as={Link} to="DashboardForm">Home</Nav.Link> 
       <Nav.Link  href="#viewForm" as={Link} to="ViewForm">View Claim</Nav.Link>  
-      <Nav.Link href="#updateForm" as={Link}  to="UpdateForm">Update Claim</Nav.Link>
       <Navbar.Brand href="#Contact" as={Link} to="Contact">Contact Us</Navbar.Brand>  
     </Nav>
   </Navbar>

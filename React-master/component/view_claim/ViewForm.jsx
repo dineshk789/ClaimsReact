@@ -17,7 +17,6 @@ class ViewForm extends React.Component {
     <Nav className="mr-auto">   
      <Nav.Link href="#home" as={Link} to="DashboardForm">Home</Nav.Link>  
       <Navbar.Brand href="#viewForm" as={Link} to="ViewForm">View Claim</Navbar.Brand>  
-      <Nav.Link href="#updateForm" as={Link}  to="UpdateForm">Update Claim</Nav.Link>
       <Nav.Link href="#contact" as={Link} to="Contact">Contact Us</Nav.Link>
     </Nav>
   </Navbar>

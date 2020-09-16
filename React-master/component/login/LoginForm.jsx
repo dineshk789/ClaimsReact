@@ -76,7 +76,7 @@ class LoginForm extends React.Component {
 
  
     console.log('authenticating user');
-      axios.get(`http://localhost:3000/user/`)
+      axios.get(`http://localhost:8102/rest/user`)
       .then(res => {
         let validUser = false;
         for(let i=0;i < res.data.length; i++) {

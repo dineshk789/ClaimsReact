@@ -39,7 +39,7 @@ class UpdateForm extends React.Component {
 
 componentDidMount() {
     console.log('----------------emp_id------------- ', this.props.params.emp_id);
-   // axios.get(`http://localhost:3000/claims/${this.props.params.claimId}`)
+   if(this.props.params.emp_id){
     axios.get(`http://localhost:8102/rest/claims/getClaim/${this.props.params.emp_id}`)
     .then(res => {
       const claim = res.data;
@@ -49,7 +49,18 @@ componentDidMount() {
     .catch(error => {
        this.setState({claim:null})
        console.log('error', error);
+    })}else {
+      axios.get(`http://localhost:8102/rest/claims/getClaim/001`)
+    .then(res => {
+      const claim = res.data;
+      console.log(claim);
+      this.setState({ claim });
     })
+    .catch(error => {
+       this.setState({claim:null})
+       console.log('error', error);
+    })
+    }
  }
 
 cancelUpdate() {        
@@ -124,12 +135,11 @@ submitClaim(e) {
     return (
    <div>
 <NavigationBar/>
-    <Navbar  style={{backgroundColor:"#000000"}} variant="dark">
+    <Navbar  style={{backgroundColor:"#154360"}} variant="dark">
       
     <Nav className="mr-auto">   
      <Nav.Link href="#home" as={Link} to="DashboardForm">Home</Nav.Link>  
-      <Nav.Link  href="#viewForm" as={Link} to="ViewForm">View Claim</Nav.Link>  
-      <Nav.Link href="#updateForm" as={Link}  to="UpdateForm">Update Claim</Nav.Link>
+      <Nav.Link  href="#viewForm" as={Link} to="ViewForm">View Claim</Nav.Link>
       <Nav.Link href="#contact" as={Link} to="Contact">Contact Us</Nav.Link>
     </Nav>
   </Navbar>

@@ -12,7 +12,7 @@ class Contact extends React.Component {
     return(
     	<div>
     	 <NavigationBar/>
-   <Navbar  style={{backgroundColor:"#000000"}} variant="dark">
+   <Navbar  style={{backgroundColor:"#154360"}} variant="dark">
       
     <Nav className="mr-auto">   
      <Nav.Link  href="#home" as={Link} to="DashboardForm">Home</Nav.Link> 
